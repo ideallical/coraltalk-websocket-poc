@@ -3,6 +3,9 @@
 Coral Talk v6 provides a way to subscribe to events via GraphQL.
 This is a proof of concept (POC) to show that it's possible.
 
+The code is inspired by [this github issue][coraltalk_issue2876]
+
+
 ## Installation
 ```sh
 nvm use v12.10.0
@@ -20,15 +23,6 @@ To get the value of `TALK_TOKEN` read `How to get value of TALK_TOKEN`
 ## Start websocket client and listen to CoralTalk events
 ```sh
 npm run start
-```
-
-
-## How to run Coral Talk v6 locally (different project):
-```sh
-nvm use v12.10.0
-npm install
-npm run build
-npm run start:development
 ```
 
 ## How to get value of TALK_TOKEN
@@ -68,3 +62,5 @@ Which returns a response similar to:
   }
 }
 ```
+
+[coraltalk_issue2876]: https://github.com/coralproject/talk/issues/2876
