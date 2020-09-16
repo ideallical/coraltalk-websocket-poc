@@ -3,6 +3,8 @@
 Coral Talk v6 provides a way to subscribe to events via GraphQL.
 This project is a proof of concept (POC) to show that it's possible via NodeJS.
 
+**NOTE Im in no way affiliated with Coral Talk and or Vox Media**
+
 The code is inspired by [this github issue][coraltalk_issue2876]
 
 
