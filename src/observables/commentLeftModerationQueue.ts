@@ -6,7 +6,7 @@ import gql from 'graphql-tag';
 
 const query = gql`
   subscription {
-    commentEnteredModerationQueue {
+    commentLeftModerationQueue {
       queue
       comment {
         id
@@ -39,9 +39,9 @@ const query = gql`
 
 const handlers = {
   next(result: any) {
-    console.info('Handling "commentEnteredModerationQueue"');
+    console.info('Handling "commentLeftModerationQueue"');
 
-    const { comment, queue } = result.data.commentEnteredModerationQueue;
+    const { comment, queue } = result.data.commentLeftModerationQueue;
     const { author, body, id: commentId, status } = comment;
     const { id: authorId, username: authorUsername } = author;
 
